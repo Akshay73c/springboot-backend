@@ -1,5 +1,4 @@
 package com.akshay.backendspringboot.controllers;
-
 import com.akshay.backendspringboot.entities.Expense;
 import com.akshay.backendspringboot.entities.User;
 import com.akshay.backendspringboot.services.ExpenseService;
@@ -45,7 +44,7 @@ public class UserController {
 
     @GetMapping("/expenses")
     public List<Expense> getExpenses(@RequestParam Long user_id) {
-        System.out.println("User Id : "+user_id);
+        System.out.println("in getExpense function");
         return expenseService.getByUserId(user_id);
     }
 

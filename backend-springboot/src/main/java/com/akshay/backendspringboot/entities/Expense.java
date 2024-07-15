@@ -4,10 +4,11 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
+import java.sql.Connection;
+import java.sql.Statement;
 
 @Entity
 public class Expense {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
